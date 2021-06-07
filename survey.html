@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/survey.css">
+    <title>Survey Form</title>
+</head>
+
+<body translate="no">
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Chuck Steaks' In-Room Dinning Survey</h1>
+            <p id="description" class="description text-center">
+            We are committed to exciting your taste buds!😋 <br>Please share your experience with us.
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>Would you recommend Chuck Steaks' In-Room Dining Service to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+            </div>
+            <div class="form-group">
+                <p>
+                    What did you like the most about our In-Room Service?
+                </p>
+                <select id="dropdown" name="mostLike" class="form-control" required="">
+                    <option disabled="" selected="" value="">Select an option</option>
+                    <option value="servicestaff">Our Room Service Staff</option>
+                    <option value="dishvariety">Our Variety of Quality Dishes</option>
+                    <option value="minibar">Our Mini Bar</option>
+                    <option value="deliveryspeed">Speed of Delivery</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>
+                    What would you like to see improved?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+
+                <label><input name="prefer" value="prompt-food-delivery" type="checkbox" class="input-checkbox">How Promptly Food is Delivered</label>
+                <label>
+                    <input name="prefer" value="attitude-of-staff" type="checkbox" class="input-checkbox">The Attitude of Our Room Service Staff</label>
+                <label><input name="prefer" value="accurate-food-delivery" type="checkbox" class="input-checkbox">Accurate Food Deliver (As Ordered)</label>
+                <label><input name="prefer" value="food-quality" type="checkbox" class="input-checkbox">The Food Quality</label>
+                <label><input name="prefer" value="room-service-menu" type="checkbox" class="input-checkbox">The Room Service Menu</label>
+                <label><input name="prefer" value="items-in-mini-bar" type="checkbox" class="input-checkbox">Number of items in our Mini-Bar</label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div> 
+</body>
+
+</html>
+
